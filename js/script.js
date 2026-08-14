@@ -8,7 +8,7 @@ const translations = {
     navReviews: 'Bewertungen',
     navLocation: 'Lage',
     navContact: 'Kontakt',
-    heroEyebrow: 'Ferienhaus in Oberammergau · Nähe München',
+    heroEyebrow: 'Ferienhaus in Oberammergau',
     heroTitle: 'Ruhe, Berge und modernes Wohnen im <span>Herzen Bayerns</span>.',
     heroText: 'Das Ferienhaus Valentin verbindet gemütlichen Alpencharme mit einem klaren, modernen Design – ideal für Familien, Paare und kleine Gruppen, die Natur, Kultur und Komfort lieben.',
     heroBook: 'Jetzt buchen',
@@ -22,20 +22,15 @@ const translations = {
     statRoomsValue: '3',
     statBathrooms: 'Bäder',
     statBathroomsValue: '4,5',
-    heroPill: 'Bergblick',
-    heroPillAlt: 'Oberammergau',
     heroCardTitle: 'Ein Ort zum Abschalten',
-    heroCardText: 'Große Fenster, warme Materialien und viel Licht sorgen für eine entspannte Atmosphäre mit Alpenfeeling.',
-    heroList1: 'Terrasse mit Aussicht',
-    heroList2: 'Private Parkplätze',
-    heroList3: 'Moderne Küche',
+    heroCardText: '',
     strip1: 'WLAN inklusive',
     strip2: 'Familienfreundlich',
     strip3: 'Wanderwege direkt in der Nähe',
     strip4: 'Ideal für Kurzurlaub & Workation',
     aboutEyebrow: 'Über das Ferienhaus',
     aboutTitle: 'Modern, gemütlich und perfekt gelegen.',
-    aboutText: 'Oberammergau ist bekannt für seine Holzschnitzkunst, die Passion und die beeindruckende Lage zwischen Bergen, Tälern und klarer Luft. Das Ferienhaus bietet einen ruhigen Rückzugsort mit hochwertiger Ausstattung und viel Platz zum Wohlfühlen.',
+    aboutText: 'Oberammergau ist bekannt für seine Holzschnitzkunst, die Passion und die beeindruckende Lage zwischen Bergen und Tälern. Das Ferienhaus bietet einen ruhigen Rückzugsort mit hochwertiger Ausstattung und viel Platz zum Wohlfühlen.',
     feature1Title: 'Komfortables Wohnen',
     feature1Text: 'Offener Wohnbereich, bequeme Sitzlandschaft und ein heller Essbereich für entspannte Abende.',
     feature2Title: 'Wärme & Atmosphäre',
@@ -91,7 +86,6 @@ const translations = {
     mapText: 'Perfekt für Natururlaub, Kurztrip oder entspannte Tage mit Familie und Freunden.',
     contactEyebrow: 'Kontakt',
     contactTitle: 'Direkt schreiben oder anrufen.',
-    contactText: 'Die Anfrage läuft jetzt über E-Mail und Telefon statt über ein Formular.',
     contactDetail1Label: 'E-Mail',
     contactDetail2Label: 'Telefon',
     contactDetail3Label: 'Adresse',
@@ -129,20 +123,15 @@ const translations = {
     statRoomsValue: '3',
     statBathrooms: 'bathrooms',
     statBathroomsValue: '4.5',
-    heroPill: 'Mountain view',
-    heroPillAlt: 'Oberammergau',
     heroCardTitle: 'A place to unwind',
-    heroCardText: 'Large windows, warm materials, and plenty of light create a relaxed atmosphere with Alpine vibes.',
-    heroList1: 'Terrace with a view',
-    heroList2: 'Private parking',
-    heroList3: 'Modern kitchen',
+    heroCardText: '',
     strip1: 'Wi‑Fi included',
     strip2: 'Family-friendly',
     strip3: 'Trails nearby',
     strip4: 'Great for short stays & workations',
     aboutEyebrow: 'About the house',
     aboutTitle: 'Modern, cozy, and perfectly located.',
-    aboutText: 'Oberammergau is known for its woodcarving tradition, the Passion Play, and its impressive setting between mountains, valleys, and fresh air. The holiday home offers a peaceful retreat with premium amenities and plenty of space to relax.',
+    aboutText: 'Oberammergau is known for its woodcarving tradition, the Passion Play, and its impressive setting between mountains and valleys. The holiday home offers a peaceful retreat with premium amenities and plenty of space to relax.',
     feature1Title: 'Comfortable living',
     feature1Text: 'Open living space, a comfortable seating area, and a bright dining zone for easy evenings.',
     feature2Title: 'Warm atmosphere',
@@ -198,7 +187,6 @@ const translations = {
     mapText: 'Perfect for nature holidays, weekend trips, or relaxed days with family and friends.',
     contactEyebrow: 'Contact',
     contactTitle: 'Write an email or call directly.',
-    contactText: 'The inquiry now goes via email and phone instead of a form.',
     contactDetail1Label: 'Email',
     contactDetail2Label: 'Phone',
     contactDetail3Label: 'Address',
@@ -214,6 +202,35 @@ const translations = {
     menuClose: 'Close menu'
   }
 };
+
+const themeToggle = document.querySelector('.theme-toggle');
+const themeIcon = document.querySelector('.theme-icon');
+const themeLabel = document.querySelector('.theme-label');
+
+const getPreferredTheme = () => {
+  const saved = localStorage.getItem('ferienhaus-theme');
+  if (saved === 'light' || saved === 'dark') return saved;
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+};
+
+const applyTheme = (theme) => {
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+  const isDark = theme === 'dark';
+  themeToggle.setAttribute('aria-pressed', String(isDark));
+  themeToggle.setAttribute('aria-label', isDark ? 'Helles Design aktivieren' : 'Dunkles Design aktivieren');
+  themeToggle.title = isDark ? 'Zum hellen Design wechseln' : 'Zum dunklen Design wechseln';
+  themeIcon.textContent = isDark ? '☀' : '☾';
+  themeLabel.textContent = isDark ? 'Hell' : 'Dunkel';
+};
+
+applyTheme(getPreferredTheme());
+
+themeToggle.addEventListener('click', () => {
+  const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+  localStorage.setItem('ferienhaus-theme', nextTheme);
+  applyTheme(nextTheme);
+});
 
 const menuButton = document.querySelector('.menu-button');
 const mobileNav = document.querySelector('#mobileNav');
