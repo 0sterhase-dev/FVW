@@ -9,8 +9,8 @@ const translations = {
     navLocation: 'Lage',
     navContact: 'Kontakt',
     heroEyebrow: 'Ferienhaus in Oberammergau',
-    heroTitle: 'Ruhe, Berge und modernes Wohnen im <span>Herzen Bayerns</span>.',
-    heroText: 'Das Ferienhaus Valentin verbindet gemütlichen Alpencharme mit einem klaren, modernen Design – ideal für Familien, Paare und kleine Gruppen, die Natur, Kultur und Komfort lieben.',
+    heroTitle: 'Bayerische Auszeit zwischen <span>Bergen und Ruhe</span>.',
+    heroText: 'Das Ferienhaus Valentin verbindet gemütlichen Alpencharme mit klaren Linien und viel Komfort – ideal für Familien, Paare und kleine Gruppen, die Natur, Kultur und Erholung lieben.',
     heroBook: 'Jetzt buchen',
     heroCtaSecondary: 'Bilder ansehen',
     ratingScore: '5.0 Sterne',
@@ -29,7 +29,7 @@ const translations = {
     strip3: 'Wanderwege direkt in der Nähe',
     strip4: 'Ideal für Kurzurlaub & Workation',
     aboutEyebrow: 'Über das Ferienhaus',
-    aboutTitle: 'Modern, gemütlich und perfekt gelegen.',
+    aboutTitle: 'Stilvoll wohnen, entspannt ankommen.',
     aboutText: 'Oberammergau ist bekannt für seine Holzschnitzkunst, die Passion und die beeindruckende Lage zwischen Bergen und Tälern. Das Ferienhaus bietet einen ruhigen Rückzugsort mit hochwertiger Ausstattung und viel Platz zum Wohlfühlen.',
     feature1Title: 'Komfortables Wohnen',
     feature1Text: 'Offener Wohnbereich, bequeme Sitzlandschaft und ein heller Essbereich für entspannte Abende.',
@@ -42,7 +42,7 @@ const translations = {
     amenity1: 'Kostenloses WLAN',
     amenity2: 'Voll ausgestattete Küche',
     amenity3: '3 Schlafzimmer',
-    amenity4: '4,5 moderne Bäder',
+    amenity4: '4,5 hochwertig ausgestattete Bäder',
     amenity5: 'Terrasse mit Sitzbereich',
     amenity6: 'Parkplatz am Haus',
     amenity7: 'Waschmaschine',
@@ -50,11 +50,11 @@ const translations = {
     amenity9: 'Ruhige Lage',
     amenity10: 'Schneller Self-Check-in',
     galleryEyebrow: 'Galerie',
-    galleryTitle: 'Ein moderner Look mit viel Raum zum Durchatmen.',
+    galleryTitle: 'Viel Raum zum Ankommen und Durchatmen.',
     gallery1Title: 'Wohnzimmer',
     gallery1Text: 'Hell, offen und perfekt für gemeinsame Abende.',
     gallery2Title: 'Küche',
-    gallery2Text: 'Modern ausgestattet für Frühstück, Lunch und Dinner.',
+    gallery2Text: 'Hochwertig ausgestattet für Frühstück, Lunch und Dinner.',
     gallery3Title: 'Schlafzimmer',
     gallery3Text: 'Sanfte Farben und gute Erholung nach langen Ausflügen.',
     gallery4Title: 'Garten',
@@ -62,11 +62,11 @@ const translations = {
     gallery5Title: 'Balkon',
     gallery5Text: 'Ein stiller Platz mit Blick ins Grüne.',
     gallery6Title: 'Badezimmer',
-    gallery6Text: 'Klar, modern und angenehm ruhig gestaltet.',
+    gallery6Text: 'Klar gestaltet und angenehm ruhig.',
     gallery7Title: 'Wohnbereich',
     gallery7Text: 'Gemütlich für lange Abende und entspannte Gespräche.',
     gallery8Title: 'Lounge',
-    gallery8Text: 'Weiches Licht, viel Platz und ein moderner Look.',
+    gallery8Text: 'Weiches Licht, viel Platz und eine zeitgemäße Atmosphäre.',
     reviewsEyebrow: 'Bewertungen',
     reviewsTitle: '5,0 Sterne auf Airbnb und starke Rückmeldungen von Gästen.',
     reviewSummaryText: 'Sauber, ruhig und mit drei Schlafzimmern sowie 4,5 Bädern für einen entspannten Aufenthalt ausgestattet.',
@@ -82,7 +82,7 @@ const translations = {
     location4: '☕ Cafés, Kultur und bayerische Küche',
     mapTopLeft: 'Oberammergau',
     mapTopRight: 'Deutschland',
-    mapAddress: '5 Eugen-Papst-Straße, Oberammergau, Deutschland',
+    mapAddress: 'Eugen-Papst-Straße 5, Oberammergau, Deutschland',
     mapText: 'Perfekt für Natururlaub, Kurztrip oder entspannte Tage mit Familie und Freunden.',
     contactEyebrow: 'Kontakt',
     contactTitle: 'Direkt schreiben oder anrufen.',
@@ -93,9 +93,7 @@ const translations = {
     callButton: 'Anrufen',
     footerBrand: 'Ferienhaus Valentin',
     footerLocation: 'Oberammergau · Bayern · Deutschland',
-    footerStart: 'Start',
-    footerContact: 'Kontakt',
-    footerImprint: 'Impressum',
+        footerImprint: 'Impressum',
     footerPrivacy: 'Datenschutz',
     menuOpen: 'Menü öffnen',
     menuClose: 'Menü schließen'
@@ -110,8 +108,8 @@ const translations = {
     navLocation: 'Location',
     navContact: 'Contact',
     heroEyebrow: 'Holiday home in Oberammergau · near Munich',
-    heroTitle: 'Calm mountains and modern living in the <span>heart of Bavaria</span>.',
-    heroText: 'Holiday Home Valentin blends cozy Alpine charm with a clean, modern design — ideal for families, couples, and small groups who love nature, culture, and comfort.',
+    heroTitle: 'A Bavarian escape surrounded by <span>mountains and calm</span>.',
+    heroText: 'Holiday Home Valentin blends cozy Alpine charm with clean lines and plenty of comfort — ideal for families, couples, and small groups who love nature, culture, and relaxation.',
     heroBook: 'Book now',
     heroCtaSecondary: 'View photos',
     ratingScore: '5.0 stars',
@@ -130,7 +128,7 @@ const translations = {
     strip3: 'Trails nearby',
     strip4: 'Great for short stays & workations',
     aboutEyebrow: 'About the house',
-    aboutTitle: 'Modern, cozy, and perfectly located.',
+    aboutTitle: 'Thoughtful style, easy arrival.',
     aboutText: 'Oberammergau is known for its woodcarving tradition, the Passion Play, and its impressive setting between mountains and valleys. The holiday home offers a peaceful retreat with premium amenities and plenty of space to relax.',
     feature1Title: 'Comfortable living',
     feature1Text: 'Open living space, a comfortable seating area, and a bright dining zone for easy evenings.',
@@ -143,7 +141,7 @@ const translations = {
     amenity1: 'Free Wi‑Fi',
     amenity2: 'Fully equipped kitchen',
     amenity3: '3 bedrooms',
-    amenity4: '4.5 modern bathrooms',
+    amenity4: '4.5 well-appointed bathrooms',
     amenity5: 'Terrace with seating area',
     amenity6: 'On-site parking',
     amenity7: 'Washing machine',
@@ -151,11 +149,11 @@ const translations = {
     amenity9: 'Quiet location',
     amenity10: 'Fast self check-in',
     galleryEyebrow: 'Gallery',
-    galleryTitle: 'A modern look with plenty of space to breathe.',
+    galleryTitle: 'Plenty of room to arrive and unwind.',
     gallery1Title: 'Living room',
     gallery1Text: 'Bright, open, and perfect for shared evenings.',
     gallery2Title: 'Kitchen',
-    gallery2Text: 'Modern setup for breakfast, lunch, and dinner.',
+    gallery2Text: 'Well equipped for breakfast, lunch, and dinner.',
     gallery3Title: 'Bedroom',
     gallery3Text: 'Soft colors and a restful feel after long excursions.',
     gallery4Title: 'Garden',
@@ -163,7 +161,7 @@ const translations = {
     gallery5Title: 'Balcony',
     gallery5Text: 'A quiet place with views of the greenery.',
     gallery6Title: 'Bathroom',
-    gallery6Text: 'Clean, modern, and pleasantly calm.',
+    gallery6Text: 'Clean, calm, and thoughtfully designed.',
     gallery7Title: 'Living area',
     gallery7Text: 'Cozy for long evenings and relaxed conversations.',
     gallery8Title: 'Lounge',
@@ -183,7 +181,7 @@ const translations = {
     location4: '☕ Cafés, culture, and Bavarian cuisine',
     mapTopLeft: 'Oberammergau',
     mapTopRight: 'Germany',
-    mapAddress: '5 Eugen-Papst-Straße, Oberammergau, Germany',
+    mapAddress: 'Eugen-Papst-Straße 5, Oberammergau, Germany',
     mapText: 'Perfect for nature holidays, weekend trips, or relaxed days with family and friends.',
     contactEyebrow: 'Contact',
     contactTitle: 'Write an email or call directly.',
@@ -194,43 +192,32 @@ const translations = {
     callButton: 'Call',
     footerBrand: 'Holiday Home Valentin',
     footerLocation: 'Oberammergau · Bavaria · Germany',
-    footerStart: 'Home',
-    footerContact: 'Contact',
-    footerImprint: 'Imprint',
+        footerImprint: 'Imprint',
     footerPrivacy: 'Privacy',
     menuOpen: 'Open menu',
     menuClose: 'Close menu'
   }
 };
 
-const themeToggle = document.querySelector('.theme-toggle');
-const themeIcon = document.querySelector('.theme-icon');
-const themeLabel = document.querySelector('.theme-label');
-
 const getPreferredTheme = () => {
-  const saved = localStorage.getItem('ferienhaus-theme');
-  if (saved === 'light' || saved === 'dark') return saved;
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 };
 
 const applyTheme = (theme) => {
   document.documentElement.dataset.theme = theme;
   document.documentElement.style.colorScheme = theme;
-  const isDark = theme === 'dark';
-  themeToggle.setAttribute('aria-pressed', String(isDark));
-  themeToggle.setAttribute('aria-label', isDark ? 'Helles Design aktivieren' : 'Dunkles Design aktivieren');
-  themeToggle.title = isDark ? 'Zum hellen Design wechseln' : 'Zum dunklen Design wechseln';
-  themeIcon.textContent = isDark ? '☀' : '☾';
-  themeLabel.textContent = isDark ? 'Hell' : 'Dunkel';
 };
 
 applyTheme(getPreferredTheme());
 
-themeToggle.addEventListener('click', () => {
-  const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
-  localStorage.setItem('ferienhaus-theme', nextTheme);
-  applyTheme(nextTheme);
-});
+const colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const updateThemeFromSystem = (event) => applyTheme(event.matches ? 'dark' : 'light');
+
+if (typeof colorSchemeQuery.addEventListener === 'function') {
+  colorSchemeQuery.addEventListener('change', updateThemeFromSystem);
+} else if (typeof colorSchemeQuery.addListener === 'function') {
+  colorSchemeQuery.addListener(updateThemeFromSystem);
+}
 
 const menuButton = document.querySelector('.menu-button');
 const mobileNav = document.querySelector('#mobileNav');
